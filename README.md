@@ -1,6 +1,6 @@
 # Sistema BI e IA · Plaza Vea Chiclayo
 
-El sistema apoya la toma de decisiones sobre inventario y reposición en Plaza Vea Chiclayo. Reúne información de ventas y stock, estima la demanda y genera alertas para ayudar a decidir qué productos reponer y cuándo, con el fin de reducir los quiebres de stock y el exceso de inventario.
+El sistema utiliza **machine learning (aprendizaje automático)** para pronosticar la demanda en Plaza Vea Chiclayo a partir del historial de ventas. Combina estos pronósticos con los niveles de stock y las alertas para ayudar a decidir qué productos reponer y cuándo, con el fin de reducir los quiebres de stock y el exceso de inventario.
 
 ## Módulos
 
