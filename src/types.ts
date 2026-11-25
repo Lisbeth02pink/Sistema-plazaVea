@@ -1,0 +1,10 @@
+export type Product={id:number;code:string;name:string;category:string;price:number;stock:number;unit_of_measure:string|null;minimum_stock:number|null;safety_stock:number|null;maximum_stock:number|null;supplier:string|null;lead_time_days:number|null;policy_configured:boolean;status:string;inventory_registered:number;source_item_id:string|null;source_url:string|null;source_captured_at:string|null;stock_simulated:number};
+export type ProductInput={code:string;name:string;category:string;price:number;stock:number;unit_of_measure:string;minimum_stock:number;safety_stock:number;maximum_stock:number|null;supplier:string;lead_time_days:number};
+export type SaleProduct={id:number;code:string;name:string;category:string;price:number;stock:number;unit_of_measure:string|null};
+export type SaleItem={id?:number;product_id:number;code?:string;name?:string;category?:string;quantity:number;unit_price:number;subtotal?:number};
+export type Sale={id:number;occurred_at:string;reference:string;subtotal:number;total:number;cashier:string|null;items_count:number;units:number;items?:SaleItem[]};
+export type SalesStats={total_sales:number;units:number;transactions:number;average_ticket:number;daily:{day:string;sales:number;units:number}[]};
+export type MovementType='Entrada por recepción'|'Salida por venta'|'Ajuste positivo'|'Ajuste negativo'|'Devolución'|'Merma';
+export type InventoryMovement={id:number;product_id:number;code:string;product:string;category:string;movement_type:MovementType;quantity:number;stock_before:number;stock_after:number;occurred_at:string;reason:string;reference:string;user_id:number|null;user_name:string|null};
+export type InventoryMovementPage={items:InventoryMovement[];total:number;page:number;page_size:number;pages:number};
+export type InventoryMovementInput={product_id:number;movement_type:Exclude<MovementType,'Salida por venta'>;quantity:number;reason:string;reference:string;occurred_at:string};
