@@ -29,5 +29,3 @@ Ejecuta `create_admin.py` solo para crear la cuenta inicial. En otra terminal, d
 npm ci
 npm run dev
 ```
-
-Abre la dirección que indica Vite, normalmente `http://localhost:5173`. La documentación de la API está en `http://127.0.0.1:8000/docs`. Para usar PostgreSQL, consulta [la guía de configuración](backend/POSTGRESQL.md).
