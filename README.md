@@ -1,6 +1,6 @@
 # Sistema BI e IA · Plaza Vea Chiclayo
 
-El sistema utiliza **machine learning (aprendizaje automático)** para pronosticar la demanda en Plaza Vea Chiclayo a partir del historial de ventas. Combina estos pronósticos con los niveles de stock y las alertas para ayudar a decidir qué productos reponer y cuándo, con el fin de reducir los quiebres de stock y el exceso de inventario.
+El sistema usa **machine learning** para pronosticar la demanda de productos en Plaza Vea Chiclayo. Entrena el algoritmo `HistGradientBoostingRegressor` de scikit-learn con el historial de ventas registrado en el sistema y contrasta los pronósticos con el stock para orientar la reposición. El panel de **Business Intelligence (BI)** presenta indicadores de ventas, inventario, alertas y demanda proyectada en la aplicación web con React y Recharts.
 
 ## Módulos
 
